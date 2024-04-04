@@ -57,6 +57,9 @@ public void RunStoredProcedureWithArrayAsParameters(IEnumerable<long> idvalues)
 }
 ```
 
+Remember when calling to always have the `RETURN_VALUE` parameter even when calling procedures having `OUT` parameters! Or you get errors telling you either need parameters or that the procedure is not defined.
+
+
 ## Building
 From a powershell script, run `build.ps1` from the root folder of the repo.
 
